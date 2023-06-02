@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #152238;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.random-content {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.claim-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.claim-button:hover {
+  background-color: #45a049;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .random-content {
+    font-size: 20px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+  }
+
+  .claim-button {
+    font-size: 16px;
+  }
+}
+ 
