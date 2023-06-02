@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="random-content" id="random-container"></div>
+  <input type="text" id="code-input" placeholder="Masukkan kode disini">
+  <button id="claim-button" class="claim-button">Klaim Hadiah</button>
+
+  <script>
+    var randomContainer = document.getElementById('random-container');
+    var codeInput = document.getElementById('code-input');
+    var claimButton = document.getElementById('claim-button');
+    var randomContent = [
+      "Selamat! Anda memenangkan hadiah gratis.",
+      "Anda beruntung! Klaim hadiah gratis sekarang.",
+      "Wow! Anda mendapatkan kesempatan klaim hadiah gratis.",
+      "Selamat datang di promo spesial! Dapatkan hadiah gratis.",
+      "Jangan lewatkan kesempatan klaim hadiah gratis!"
+    ];
+
+    var randomIndex = Math.floor(Math.random() * randomContent.length);
+    var randomText = randomContent[randomIndex];
+
+    randomContainer.textContent = randomText;
+
+    claimButton.addEventListener('click', function() {
+      var enteredCode = codeInput.value;
+      // Logika klaim hadiah berdasarkan kode yang dimasukkan di sini
+      
+      if (enteredCode === "KODEHADIAH123") {
+        alert('Hadiah gratis telah berhasil diklaim!');
+      } else {
+        alert('Kode yang dimasukkan tidak valid.');
+      }
+    });
+  </script>
+</body>
+</html>
